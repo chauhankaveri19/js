@@ -1,57 +1,45 @@
-function welcome(){
-    console.log("welcome kaveri")
+function name(){
+    console.log("hello")
+    console.log("world")
 
 }
-welcome()
-welcome()
-welcome()
+name()
+name()
+name()
+
 
 
 //function with parameter
-function greet(name){
-    console.log("hello"+ " " +name)
+function add(a,b){
+    console.log(2+3)
 }
-greet("kaveri")
-greet("priya")
+add()
 
-//function with two parameter
-function student(name,age){
-    console.log("student name:"+name+" "+"age:"+age)
+function addd(a,b){
+    console.log(3+"4")
 }
-student("kaveri",20)
-student("priya",30)
+addd()
 
-//return keyword
-function multiply(a,b){
-    return a*b
+function adddd(a,b){
+    console.log(3+"a")
 }
-let result=multiply(5,4)
-console.log(result)
+adddd()
 
-
-//practical task
-function introduce(name,course){
-    console.log("name:",name)
-    console.log("course:",course)
+//function with return keyword
+function addtwonumber(a,b){
+ let result=a+b
+ return result
 }
-introduce("kaveri","bca");
-introduce("riya","bba")
+result= addtwonumber(5,2)
+console.log("Result:",result)
 
-//sqaure
-function square(num){
-    return num*num
-}
-console.log(square(5))
-console.log(square(10))
-
-//practical 3
-function isadult(age){
-    if(age>18){
-        return "adult"
+function loggedin(username){
+    if(username===undefined){
+        console.log("enter your name")
+        return
     }
-  
-        return "minor"
-    
+    return `${username} logged in`
 }
-console.log(isadult(25))
-console.log(isadult(10))
+console.log(loggedin("kaveri"))
+
+console.log(loggedin())
