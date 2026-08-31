@@ -1,58 +1,24 @@
-function first(){
-    console.log("hello world")
+//function expression 
+ let multiply=function(a,b){
+    return a*b
 }
-first()
-
-function add(a,b){
-    return (a+b)
-}
-console.log(add(5,6))
-
-let z=49
-function check(){
-    if(z%2==0){
-        console.log("even")
-    }
-    else{
-        console.log("odd")
-    }
-}
-check()
-
-
-
-let a=2
-let b=7
-let c=80
-function largest(){
-    if(a>b && a>c){
-        console.log("a is largest")
-    }
-    else if(a<b && b>c){
-        console.log("b is largest")
-    }
-    else{
-        console.log("c is largest")
-    }
-}
-largest()
-
-
-    function marks(marks1,marks2,marks3){
-        return marks1 + marks2 + marks3
-    }
-    let total=marks(20,30,40)
-    console.log(total)
-
-function sqaure(a){
-    return a*a
-}
-let result=sqaure(2)
+let result=multiply(2,3)
 console.log(result)
 
-
-function per(p,q,r,s,t){
-    return p+q+r+s+t /5
+//arrow function 
+let division =(a,b)=>{
+    return a/b
 }
-let w=per(20,30,4,50,60)
-console.log(w)
+let main= division(4,2)
+console.log(main)
+
+//short
+let divisionnn=(a,b)=>  a/b;
+console.log(divisionnn(15,3))
+
+//default parameter
+function welcome(name="guest"){
+    console.log("welcome"+"  "+name)
+}
+welcome("kaveri")
+welcome()
