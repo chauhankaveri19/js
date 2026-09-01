@@ -22,3 +22,26 @@ function welcome(name="guest"){
 }
 welcome("kaveri")
 welcome()
+
+// global scope 
+let age=20;
+function myage(){
+    console.log(age)
+}
+myage()
+
+//local scope
+function mymark(){
+    let mark=35
+    console.log(mark)
+}
+mymark()
+
+//callback 
+function helloo(){
+    console.log("hello")
+}
+function worldd(callback){
+   callback()
+}
+worldd(helloo)
